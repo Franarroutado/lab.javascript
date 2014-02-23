@@ -17,6 +17,14 @@ test("Factorial function", function() {
     ok(factorial(5) == 120, "120 is not equal to " + factorial(5));
 });
 
+test("Factorial functionV2", function() {
+    ok(factorialV2(5) == 120, "120 is not equal to " + factorialV2(5));
+});
+
+test("Factorial functionV3", function() {
+    ok(factorialV3(5) == 120, "120 is not equal to " + factorialV3(5));
+});
+
 test("Currying function", function() {
     var babyKoala = babyAnimals('koalas');
     ok(babyKoala('elephants') == 'i love koalas and elephants', 'It went wrong')
@@ -35,5 +43,5 @@ test("Splice test", function() {
     var originalArray = [14, 3, 77];
     var newArray = originalArray.splice(1, 2);
     
-    ok(arraysEqual(originalArray, [3, 77]), originalArray);
+    ok(arraysEqual(originalArray, [14]), originalArray);
 });
