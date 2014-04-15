@@ -26,6 +26,12 @@ test("Factorial functionV3", function() {
 });
 
 test("Currying function", function() {
+    var babyKoala = babyAnimals('koalas');
+    ok(babyKoala('elephants') == 'i love koalas and elephants', 'It went wrong')
+});
+
+<<<<<<< HEAD
+test("Currying function", function() {
     var sumInts = sum(function(x) {
         return x;
     });
@@ -36,7 +42,7 @@ test("Currying function", function() {
     console.log(sumInts);
     ok(sumInts(1, 30) == 465, "Ha fallado la suma de Integers: " + sumInts(1, 30))
     ok(sumCubes(1,3) == 36, "Ha fallado la suba de cubos usando currying: sumCubes(1,3): " + sumCubes(1,3) + " != " + 36)
-
+=======
 // Splice vs Slice
 test("Slice test", function() {
     ok('abc'.slice(1, 2) === 'b');
@@ -51,5 +57,5 @@ test("Splice test", function() {
     var newArray = originalArray.splice(1, 2);
     
     ok(arraysEqual(originalArray, [14]), originalArray);
-
+>>>>>>> bdfb468014637a1ef594eed90cb7ad6615ba3b70
 });
